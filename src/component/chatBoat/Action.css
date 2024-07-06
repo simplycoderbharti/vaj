@@ -1,0 +1,80 @@
+.chatbot-container {
+  max-width: 100%;
+  margin: 0 auto; /* Center the container */
+  padding: 0; /* Reset padding */
+}
+
+.chatbot-box {
+  max-width: 100%;
+  width: 100%; /* Adjust width to 100% */
+  height: 550px; /* Adjust initial height */
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd; /* Add a border for better visibility */
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  overflow: hidden; /* Ensure content stays within box */
+}
+
+.chatbot-content {
+  flex-grow: 1;
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 1rem; /* Add padding */
+}
+
+.chatbot-icon {
+  width: 50px; /* Adjust size of the icon */
+  height: 50px; /* Adjust size of the icon */
+  margin: 10px; /* Add margin */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.chatbot-input {
+  width: 100%; /* Make input field full-width */
+  padding: 10px; /* Add padding */
+  border: none; /* Remove default border */
+  border-radius: 10px; /* Add rounded corners */
+  font-size: 16px; /* Adjust font size */
+  text-align: center; /* Center text input */
+}
+
+.cross-icon {
+  position: absolute; /* Position cross icon absolutely */
+  top: 10px; /* Adjust top position */
+  right: 10px; /* Adjust right position */
+  font-size: 20px; /* Adjust font size */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  text-align: center; /* Center cross icon */
+}
+
+/* Hide horizontal scrollbar */
+.chatbot-content::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in WebKit browsers */
+}
+
+/* Media queries for responsiveness */
+
+@media (max-width: 768px) {
+  .chatbot-box {
+    height: 400px; /* Adjust height for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .chatboat-container{
+    right:-2rem;
+  }
+
+  .chatbot-icon {
+    width: 40px; /* Adjust size of the icon for smaller screens */
+    height: 40px; /* Adjust size of the icon for smaller screens */
+  }
+
+  .chatbot-input {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .cross-icon {
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+}
